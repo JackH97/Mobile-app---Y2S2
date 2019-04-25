@@ -6,6 +6,19 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="pic-2">
+  <h2 ion-text color="light">Here is some information about myself </h2>
+  <ul ion-text color="light">
+    <li>Name: Jack Haugh</li>
+    <li>Age: 21</li>
+    <li>Birthday: 21st Of August</li>
+    <li>Hobbies: Computing, Rugby, Darts, music</li>
+  </ul>
 
+  <!-- Clicking on the button in the app will direct you to my GitHub Account -->
+  <button (click)="gitlink()" ion-button small>Click to go to my GitHub Account</button>
+
+<!-- This is from the status class where you enter your rating for app and will then output your answer cause of ((information)) -->
+  <h2 ion-text color="light">You Rated my App: {{information}}. Thank You.</h2>
+  <button (click)="openStatusPage()" ion-button small>Please enter Rating for app.</button>
 </ion-content>

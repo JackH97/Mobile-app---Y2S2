@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Status</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Different buttons for when user enters rating for app on about.html page in app -->
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="status">
+    <ion-item>
+      <ion-label>Excellent</ion-label>
+      <ion-radio value="Excellent"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Satified</ion-label>
+      <ion-radio value="Satified"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Okay</ion-label>
+      <ion-radio value="Okay"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Disappointed</ion-label>
+      <ion-radio value="Disappointed"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Extremey Disappointed</ion-label>
+      <ion-radio value="Extremey Disappointed"></ion-radio>
+    </ion-item>
+  </ion-list>
+  <button (click)="onSave()" ion-button round>Save</button>
+</ion-content>
